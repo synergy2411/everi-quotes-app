@@ -17,6 +17,9 @@ const routes: Routes = [
     }, {
       path : 'favorite',
       loadChildren : '../favorite/favorite.module#FavoritePageModule'
+    },{
+      path : 'quotes',
+      loadChildren : '../quotes/quotes.module#QuotesPageModule'
     }]
   }
 ];

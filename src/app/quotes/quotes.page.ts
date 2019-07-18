@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IQuote } from 'src/model/quote.model';
+import { QuoteService } from '../services/quote.service';
 
 @Component({
   selector: 'app-quotes',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuotesPage implements OnInit {
 
-  constructor() { }
+  collection : { qid: number,  category: string, quotes: IQuote[], icon: string };
+
+  constructor(private quoteService : QuoteService) { }
 
   ngOnInit() {
+    this.collection = this.quoteService.getSelectedCollection();
   }
 
 }
