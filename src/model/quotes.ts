@@ -1,13 +1,13 @@
 import { IQuote } from './quote.model';
 
 export const QUOTES_DATA: {
-  qid : number,
+  qid: number,
   category: string,
   quotes: IQuote[],
   icon: string
 }[] = [
     {
-      qid : 1,
+      qid: 1,
       category: 'inspirational',
       quotes: [
         {
@@ -29,7 +29,7 @@ export const QUOTES_DATA: {
       icon: 'brush'
     },
     {
-      qid : 2,
+      qid: 2,
       category: 'ability',
       quotes: [
         {
@@ -46,7 +46,7 @@ export const QUOTES_DATA: {
       icon: 'bicycle'
     },
     {
-      qid : 3,
+      qid: 3,
       category: 'enthusiasm',
       quotes: [
         {
@@ -63,6 +63,7 @@ export const QUOTES_DATA: {
       icon: 'battery-charging'
     },
     {
+      qid: 4,
       category: 'motivational',
       quotes: [
         {
