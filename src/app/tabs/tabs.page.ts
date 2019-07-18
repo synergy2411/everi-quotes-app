@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+// const { Geolocation } = Plugins;
+
 @Component({
   selector: 'app-tabs',
   templateUrl: './tabs.page.html',

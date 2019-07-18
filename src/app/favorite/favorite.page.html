@@ -1,9 +1,18 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>favorite</ion-title>
+    <ion-title>My Favorite</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
+    <ion-button color="primary" (click) =  "getLocation()"> Get My Location </ion-button>
+
+    <hr>
+
+  <ion-list>
+    <ion-item *ngFor="let quote of quotes">
+      <ion-label> <p>{{ quote.text }}</p></ion-label>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -5,27 +5,29 @@
 </ion-header>
 
 <ion-content padding>
-  
+
   <ion-card *ngFor="let quote of collection.quotes">
     <ion-card-header>
       <ion-card-title>
-        {{ quote.person | titlecase }}
+        <p text-center>
+          {{ quote.person | titlecase }}
+        </p>
       </ion-card-title>
     </ion-card-header>
     <ion-card-content>
       <p>{{ quote.text }}</p>
-      
+
       <ion-grid>
         <ion-row>
-          <ion-col size = 6>
-            <ion-button color = "secondary" clear href=""> Favorite </ion-button>
+          <ion-col size=6>
+            <ion-button color="secondary" (click)="onFavorite(quote)"> Favorite </ion-button>
           </ion-col>
-          <ion-col size = 6>
-              <ion-button clear color="danger" href=""> Unfavorite </ion-button>
+          <ion-col size=6>
+            <ion-button color="danger" (click)="onUnfavorite(quote)"> Unfavorite </ion-button>
           </ion-col>
         </ion-row>
       </ion-grid>
     </ion-card-content>
   </ion-card>
-  
+
 </ion-content>
